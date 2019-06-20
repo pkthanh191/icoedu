@@ -4,6 +4,12 @@
 .html_header_transparency #top .avia-builder-el-0 .container, .html_header_transparency #top .avia-builder-el-0 .slideshow_caption{padding-top:88px;}
 h1, h2, h3, h4, h5, h6, #top .title_container .main-title, tr.pricing-row td, #top .portfolio-title, .callout .content-area, .avia-big-box .avia-innerbox, .av-special-font, .av-current-sort-title, .html_elegant-blog #top .minor-meta, #av-burger-menu-ul li {font-family:'roboto', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif; }
 body.roboto {font-family:'roboto', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif; }
+#av-magazine-1 {
+    color: #fff !important;
+}
+.av-magazine-title.entry-title {
+    color: #fff;
+}
 .container {width:100%;} .container .av-content-small.units {width:73%; }
 			
 			  .responsive .boxed#top , .responsive.html_boxed.html_header_sticky #header, 
