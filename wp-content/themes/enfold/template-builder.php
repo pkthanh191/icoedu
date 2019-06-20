@@ -129,6 +129,9 @@
 		else
 		{
 		    $avia_config['currently_viewing'] = 'page';
+		    if(is_page('chi-nhanh')) {
+		        echo do_shortcode('[bap_branch]');
+            }
 		}
 		
 		/**

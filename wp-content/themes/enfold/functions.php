@@ -1,4 +1,7 @@
 <?php
+include_once 'bap_branch/common.php';
+include_once 'bap_post/common.php';
+
 if ( !defined('ABSPATH') ){ die(); }
 
 global $avia_config;

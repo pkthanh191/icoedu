@@ -77,7 +77,22 @@ if( strpos($responsive, 'responsive') !== false ) echo '<meta name="viewport" co
 wp_head();
 
 ?>
+<style type="text/css">
+    .box-download-post {
+        background: #f8f8f8;
+        padding: 5px 12px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #e5e5e5 !important;
+        font-size: 14px;
+        float: left;
+        width: 100%;
+    }
 
+    .box-download-post b {
+        color: #145883;
+    }
+</style>
 </head>
 
 

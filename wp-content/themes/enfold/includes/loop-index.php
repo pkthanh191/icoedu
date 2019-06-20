@@ -343,6 +343,12 @@ if (have_posts()) :
                 echo $content_output;
             }
 
+            if(is_singular('post')) {
+                $bap_custom_file = get_post_meta(get_the_ID(), 'bap_custom_file', true);
+                if(!empty($bap_custom_file)) {
+                    echo '<footer class="entry-footer entry-footer-download"><div class="box-download-post"><b>Tải bài viết</b>: <a href="' . $bap_custom_file . '" target="_blank">' . basename($bap_custom_file) . '</a></div></footer>';
+                }
+            }
 
             echo '<footer class="entry-footer">';
 
