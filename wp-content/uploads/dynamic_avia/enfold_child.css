@@ -10,6 +10,10 @@ body.roboto {font-family:'roboto', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica
 .av-magazine-title.entry-title {
     color: #fff;
 }
+.js_active .av-tab-section-tab-title-container { 
+    display: flex!important;
+    justify-content: space-around;
+}
 .container {width:100%;} .container .av-content-small.units {width:73%; }
 			
 			  .responsive .boxed#top , .responsive.html_boxed.html_header_sticky #header, 
