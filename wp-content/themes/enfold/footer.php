@@ -260,6 +260,41 @@
 <a href='#top' title='<?php _e('Scroll to top','avia_framework'); ?>' id='scroll-top-link' <?php echo av_icon_string( 'scrolltop' ); ?>><span class="avia_hidden_link_text"><?php _e('Scroll to top','avia_framework'); ?></span></a>
 
 <div id="fb-root"></div>
+<div id="box-btn-contact-right">
+	<a href="javascript:void(0)" id="btn-contact-right" data-id="#content-popup-contact">
+		<span class="av-icon-char" style="font-size:40px;line-height:40px;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span>
+		<br>
+		Đăng ký tư vấn
+	</a>
+</div>
+
+<div id="content-popup-contact">
+	<div id="content-popup-contact-detail">
+		<a href="javascript:void(0)" id="btn-close-popup">
+		<span class="av-icon-char" style="font-size:18px;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span>
+		</a>
+		<div id="contact-form-7">
+			<h2>Gửi liên hệ đến chúng tôi</h2>
+			<?php echo do_shortcode('[contact-form-7 id="3431" title="Form liên hệ 1"]'); ?>
+		</div>
+	</div>
+</div>
+
+<div id="nav-mobile-footer">
+	<a class="item-btn-footer item-btn-footer-fb" href="javascript:void(0)">
+		<span class="av-icon-char" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span>
+		Chat Face
+	</a>
+	<a class="item-btn-footer item-btn-footer-call" href="javascript:void(0)">
+		<span class="av-icon-char" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span>
+		Gọi điện
+	</a>
+	<a class="item-btn-footer item-btn-footer-zalo" href="javascript:void(0)">
+	<span class="av-icon-char" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></span>
+		Zalo
+	</a>
+</div>
+<div id="overlay-popup"></div>
 
 <?php
 
@@ -270,5 +305,24 @@
 
 wp_footer();
 ?>
+<script type="text/javascript">
+	$('#btn-contact-right').click(function() {
+		var divID = $(this).attr('data-id');
+		$(divID).addClass('active');
+		$('#overlay-popup').addClass('show');
+	});
+
+	$('#btn-close-popup').click(function() {
+		$('#content-popup-contact').removeClass('active');
+		$('#overlay-popup').removeClass('show');
+	});
+
+	$("body").click(function (e) {
+        if (!$(e.target).is('#content-popup-contact, #content-popup-contact *, #btn-contact-right, #btn-contact-right *')) {
+			$('#content-popup-contact').removeClass('active');
+			$('#overlay-popup').removeClass('show');
+		}
+    });
+</script>
 </body>
 </html>
