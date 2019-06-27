@@ -93,6 +93,7 @@ wp_head();
         color: #145883;
     }
 
+/* Đây là phần ae mình làm ở cafe */
 	.wpml-ls-statics-post_translations {
 		display: none;
 	}
@@ -282,6 +283,90 @@ ul.wg-pk-ctdh-ul li a:hover { background-color: #EFEFEF; }
 		padding-right: 3px;
 	}
 }
+/* đây là phần response */
+    p.wpml-ls-statics-post_translations {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .home.page-template-default #av_section_1 > .container {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .home.page-template-default #av_section_1 > .container .flex_column.av_one_third.flex_column_div.first.avia-builder-el-4 {
+            margin-bottom: 25px !important;
+        }
+
+        .home.page-template-default #av_section_1 > .container .hr.hr-invisible.avia-builder-el-7.el_after_av_slideshow.el_before_av_button,
+        .home.page-template-default #av_section_1 > .container .hr.hr-invisible.avia-builder-el-17.el_after_av_video.el_before_av_button
+        {
+            height: 0px !important;
+        }
+
+        .home.page-template-default #av_section_2 {
+            margin-top: 110px !important;
+        }
+
+        .home.page-template-default #av_section_2 .template-page.content.av-content-full {
+            padding-top: 35px !important;
+            padding-bottom: 35px !important;
+
+        }
+
+        .home.page-template-default #av_section_2 img.avia_image,
+        .home.page-template-default #av_section_2 .avia-image-container-inner {
+            width: 100% !important;
+        }
+
+        .page-id-1195 #av-layout-grid-1 .flex_cell.no_margin.av_one_half.avia-builder-el-16.el_before_av_cell_one_half {
+            padding-top: 70px !important;
+        }
+
+        .page-id-1195 #av-layout-grid-1 .flex_cell.no_margin.av_one_half.avia-builder-el-16.el_before_av_cell_one_half h3 {
+            line-height: 58px;
+        }
+
+        .page-id-1195 #av-layout-grid-1 .flex_cell.no_margin.av_one_half.avia-builder-el-16.el_before_av_cell_one_half .avia-animated-number {
+            margin-bottom: 20px !important;
+        }
+
+        .page-id-1195 #av-layout-grid-1 .flex_cell.no_margin.av_one_half.avia-builder-el-16.el_before_av_cell_one_half .avia-animated-number div.avia-animated-number-content {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .page-id-1195 .av-subheading.av-subheading_below.av_custom_color  {
+            margin-top: 15px !important;
+        }
+
+        .page-id-3747 .flex_cell, .page-id-3526 .flex_cell, .page-id-3607 .flex_cell, .page-id-3561 .flex_cell {
+            min-height: 0px !important;
+        }
+
+        .page-id-3747 .avia-content-slider .slide-entry-title {
+            margin-top: 12px !important;
+        }
+
+        .page-id-3688 #av-tab-section-1 .flex_column.av_two_fifth {
+            background: white !important;
+            color: black !important;
+        }
+
+        .page-id-3688 #av-tab-section-1 .flex_column.av_two_fifth h3 {
+            color: black !important;
+        }
+
+        .w-50 {
+            width: 100% !important;
+            margin-bottom: 35px !important;
+        }
+
+        .description-branch .w-50 {
+            margin-bottom: 0px !important;
+        }
+    }
+
 </style>
 </head>
 
