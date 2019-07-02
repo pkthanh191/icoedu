@@ -28,6 +28,7 @@ define('DB_USER', 'root');
 /** MySQL database password */
 define('DB_PASSWORD', '');
 
+
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
@@ -77,7 +78,7 @@ $table_prefix  = 'tbl_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 

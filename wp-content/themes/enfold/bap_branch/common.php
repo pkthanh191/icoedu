@@ -10,9 +10,8 @@ function bap_branch_include_script()
 }
 
 add_action('admin_enqueue_scripts', 'bap_branch_include_script');
-
-add_action('get_header', function() {
-    if(is_page('chi-nhanh')) {
+add_action('get_header', function () {
+    if (is_page('chi-nhanh') || is_page('branch') || is_page('en/branch') || is_page('vi/chi-nhanh') || is_page(4032)) {
         wp_enqueue_style('style-maps', get_template_directory_uri() . '/bap_branch/maps/maps.css');
         wp_enqueue_style('style-openlayers', 'https://openlayers.org/en/v4.6.5/css/ol.css');
         wp_enqueue_style('style-branch', get_template_directory_uri() . '/bap_branch/css/styles_frontend.css');
