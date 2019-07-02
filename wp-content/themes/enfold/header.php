@@ -322,7 +322,8 @@ $rtl_support = 'yes' == apply_filters('avf_rtl_column_support', 'yes') ? ' rtl_c
         .page-id-3688 .av-active-tab-title,
         .page-id-3688 .av-active-tab-title span,
         .page-id-4034 .av-active-tab-title,
-        .page-id-4034 .av-active-tab-title span {
+        .page-id-4034 .av-active-tab-title span,
+        .av-tab-no-icon.av-tab-no-image:hover{
             background: #1c446f !important;
             color: white !important;
         }
