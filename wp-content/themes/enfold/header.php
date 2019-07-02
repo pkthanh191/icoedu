@@ -428,6 +428,10 @@ $rtl_support = 'yes' == apply_filters('avf_rtl_column_support', 'yes') ? ' rtl_c
         }
 
         @media only screen and (max-width: 768px) {
+            #after_section_6 {
+                display: none;
+            }
+            
             #section-box-home-mobile {
                 display: block;
             }
